@@ -11,6 +11,7 @@ public class PanelGaragePage {
     private SelenideElement AddCarBtn =$("app-garage > div > div.panel-page_heading.d-flex.justify-content-between > button");
     private SelenideElement AddAnExpenseBtn = $ ("button.car_add-expense.btn.btn-success");
     private SelenideElement EditACarBtn = $ ("button.car_edit.btn.btn-edit");
+    private SelenideElement AddACar = $ ("app-add-car-modal > div.modal-header > h4");
 
     public PanelGaragePage checkMyProfile(String profileText) {
         myProfile.shouldHave(Condition.text(profileText));
@@ -30,5 +31,11 @@ public class PanelGaragePage {
     public PanelGaragePage clickEditACarBtn() {
         EditACarBtn.shouldHave(visible).click();
         return this;
+    }
+
+    public PanelGaragePage checkAddACar(String profileText) {
+        AddACar.shouldHave(Condition.text(profileText));
+        return this;
+
     }
 }

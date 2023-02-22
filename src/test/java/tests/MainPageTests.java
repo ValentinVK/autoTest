@@ -37,7 +37,8 @@ public class MainPageTests extends BaseTest {
                 .setPassword("28052022Aa")
                 .clickLoginBtn()
                 .checkMyProfile("My profile")
-                .clickAddCarBtn();
+                .clickAddCarBtn()
+                .checkAddACar("Add a car");
     }
     @Test
     public void checkAddAnExpense() {
