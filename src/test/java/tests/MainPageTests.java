@@ -49,7 +49,8 @@ public class MainPageTests extends BaseTest {
                 .setPassword("28052022Aa")
                 .clickLoginBtn()
                 .checkMyProfile("My profile")
-                .clickAddAnExpenseBtn();
+                .clickAddAnExpenseBtn()
+                .checkAddAnExpense("Add an expense");
     }
     @Test
     public void checkEditACar() {
@@ -60,6 +61,7 @@ public class MainPageTests extends BaseTest {
                 .setPassword("28052022Aa")
                 .clickLoginBtn()
                 .checkMyProfile("My profile")
-                .clickEditACarBtn();
+                .clickEditACarBtn()
+                .checkEditACar("Edit a car");
     }
 }
