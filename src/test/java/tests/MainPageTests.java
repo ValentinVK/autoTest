@@ -29,7 +29,7 @@ public class MainPageTests extends BaseTest {
                 .checkMyProfile("My profile");
     }
     @Test
-    public void checkLogOut() {
+    public void checkAddACar() {
         new MainPage().open()
                 .clickSingInBtn()
                 .checkLoginFormTitle("Log in")
